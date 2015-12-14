@@ -3,8 +3,8 @@ This repository represent my curriculum vitae and resume.
 
 ## Contents
 
-* Curriculum Vitae
-* Resume
+* [Curriculum Vitae](./cv.pdf)
+* [Resume](./resume.pdf)
 
 
 ## Third Party
