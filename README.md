@@ -1,20 +1,13 @@
 # CV
-This repository represent my curriculum vitae and resume.
+This repository represent my resume and curriculum vitae.
 
 ## Contents
 
-* [Curriculum Vitae - Markdown](./CV.md) *new*
-  - last updates: Apr. 20, 2016
-* [Curriculum Vitae - LaTeX](./cv.pdf)
-  - last updates: Nov. 1, 2015
-* [Resume - Word](./resume.pdf)
-  - last updates: Setp. 1, 2015
-
-
-## Third Party
-
-* [**Awesome CV**](https://github.com/posquit0/Awesome-CV)
+* [Resume](./resume.pdf)
+  - last update: June 5, 2017
+* [Curriculum Vitae](https://changkun.us/cv/)
+  - last update: May 25, 2017
 
 ## License
 
-You have no premission to use this repository for anything you want to do!
+[Copyright &copy; 2015-2017 Changkun Ou](./LICENSE)
