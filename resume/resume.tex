@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{color,xcolor}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\definecolor{linkcolor}{HTML}{00008B}
+\definecolor{shade}{HTML}{D4D7FE}      %light blue shade
+\definecolor{text1}{HTML}{000000}      %text is black
+\definecolor{headings}{HTML}{00008B}   %navy blue
+\hypersetup{colorlinks,breaklinks,
+            urlcolor=linkcolor,
+            linkcolor=linkcolor
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\href{https://changkun.us/}{\Large Ou Changkun}} & +49 157 7214 1480 / +86 186 1322 5636\\
+Munich, Germany                                      &  \href{mailto:hi@changkun.us}{hi@changkun.us}\\
+Last Updates: \today                           & \href{https://changkun.us/about}{changkun.us/about}
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Munich}{Munich, Germany}
+      {Master of Science in Human-Computer Interaction}{Oct. 2016 -- Present}
+    \resumeSubheading
+      {Southwest University for Nationalities}{Chengdu, China}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.74/4.0 (1/154)}{Sep. 2012 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://shiyanlou.com/}{Shiyanlou}}{Chengdu, China}
+      {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
+      \resumeItemListStart
+        \resumeItem{shiyanlou-logsys}
+          {Built \& maintenance ELK+Redis distributed log analytics system.}
+        \resumeItem{shiyanlou-desktop}
+          {Developed a cross-platform Electron Windows/macOS/Linux desktop client.}
+        \resumeItem{shiyanlou-recosys}
+          {Developed a recommendation system by using Python.}
+        \resumeItem{shiyanlou-courses}
+          {Developed and wrote a full path and course tutorial for beginner to learn C++}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Open Source Projects}
+      {\href{https://github.com/ranman/}{github.com/changkun}}
+  \resumeSubHeadingListEnd
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages:}{ python; javascript; c; c++; objc; swift; markdown/pandoc; \LaTeX; Native Chinese Speaker; Professional Fluent English; Elementary German}
+   }
+   \item{
+    \textbf{Systems/Tools:}{ Mac user; General Linux DevOps; Docker; AWS/DigitalOcean/Aliyun; SQL/MongoDB; zsh/tmux/vim/vscode}
+   }
+   \item{
+    \textbf{Frameworks:}{ numpy/opencv/matplotlib/skearn/tensorflow, flask, jquery/react/vue/polymer/electron}
+   }
+   \item{
+     \textbf{Knowledges:}{ 
+       \resumeItemListStart
+        \resumeItem{Human Side}
+          { Human-Computer Interaction; User Study; User Experience; Human Computation; Social Psychology}
+        \resumeItem{Machine Side}
+          { Machine Learning; Recommendation System; Big Data Mining; Computer Vision; Distributed Computing; System Architecture}
+        \resumeItem{Mathematics}
+          { Functional Analysis; Stochastic Process; Analytic Number Theory}
+      \resumeItemListEnd
+     }
+   }
+ \resumeSubHeadingListEnd
+%--------PUBLICATIONS------------
+\section{Publications}
+ \resumeSubHeadingListStart
+   \item{
+       Changkun Ou.
+       The Fastest Guide of C++11/14. 
+       2016, 
+       \href{https://www.gitbook.com/book/changkun/cpp1x-tutorial/details}{Simplified Chinese}, 
+       \href{https://github.com/changkun/cpp1x-tutorial}{Source Code}
+   }
+   \item{
+       Changkun Ou, Yaxi Chen(responsible professor), Andreas Butz(co-reviwer).
+       Designing Alternative Contact-free Control Modalities for Smart Watches. 
+       2016, Bachelor Thesis. \href{https://changkun.us/files/cv/bachelor-thesis-cn.html}{Simplified Chinese}, 
+       \href{https://changkun.us/files/cv/bachelor-thesis-en.html}{English}
+   }
+   \item{
+       Changkun Ou.
+       Mathematical Modeling Tutorial (Mandarin Chinese Video Series.
+       2016, \href{https://www.youtube.com/watch?v=EUfXE3vP9_A&list=PLwUqqMt5en7c7iZIseCVAS5BX6RPkS-qR}{YouTube Playlist}
+   }
+   \item{
+       Changkun Ou, Yaxi Chen. 
+       Combining Touch Biometrics and Motion Sensors for Hand Posture Recognition and User Authentication System. 
+       Journal of Southwest University for Nationalities(Nature Science Edition). 
+       2016, 42(4):429-435. \href{https://changkun.us/files/cv/touch.swun.html}{Simplified Chinese}
+   }
+   \item{
+       Changkun Ou, Zhaoyang Guo, Yaxi Chen.
+       Space interactions based on monocular vision and simple gestures. 
+       Journal of Southwest University for Nationalities(Natural Science Edition). 
+       2014, 40(16):871-876. \href{https://changkun.us/files/cv/vision.swun.html}{Simplified Chinese}
+   }
+   \item{
+       Changkun Ou, Mu Huang, Mengxin Shi, Jiang Cheng. 
+       A Study in Keep-Right-Except-To-Pass Rule. 
+       2014, MCM Meritorious Winner \href{https://changkun.us/files/cv/28922.public.html}{English}
+   }
+ \resumeSubHeadingListEnd
+\end{document}
