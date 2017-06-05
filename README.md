@@ -1,4 +1,4 @@
-# CV
+# Resume & Curriculum Vitae
 This repository represent my resume and curriculum vitae.
 
 ## Contents
