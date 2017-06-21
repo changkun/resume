@@ -1,0 +1,332 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{color,xcolor}
+\usepackage[
+pdfauthor={Ou Changkun},
+pdftitle={CV},
+pdfproducer={Ou Changkun}
+pdfcreator={Ou Changkun},
+pdfsubject={Ou Changkun CV},
+pdfkeywords={CV, Ou Changkun},
+]{hyperref}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\definecolor{linkcolor}{HTML}{00008B}
+\definecolor{shade}{HTML}{D4D7FE}      %light blue shade
+\definecolor{text1}{HTML}{000000}      %text is black
+\definecolor{headings}{HTML}{00008B}   %navy blue
+\hypersetup{colorlinks,breaklinks,
+            urlcolor=linkcolor,
+            linkcolor=linkcolor
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\href{https://changkun.us/}{\Large Ou Changkun}} & \\
+Munich, Germany                                          & \\
++49 157 7214 1480                                        & \\
+\href{mailto:hi@changkun.us}{hi@changkun.us}             & \\
+\href{https://changkun.us/about}{changkun.us/about}      & \\
+\sffamily Last update: \today                            & \\
+\end{tabular*}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Munich (LMU)}{Munich, Germany}
+      {Master of Science in Human-Computer Interaction}{since Oct. 2016}
+    % \resumeSubheading
+    %   {University of Electronic Science and Technology of China (UESTC)}{Chengdu, China}
+    %   {Master of Engineering in Big Data}{Aug. 2016 -- Paused at Oct. 2016}
+    \resumeSubheading
+      {University of Munich}{Munich, Germany}
+      {Exchange Student in Media Informatics}{Sep. 2015 -- Feb. 2016}
+    \resumeSubheading
+      {Southwest University for Nationalities (SWUN)}{Chengdu, China}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.74/4.0 (1/154)}{Sep. 2012 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://shiyanlou.com/}{Shiyanlou}}{Chengdu, China}
+      {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
+      \resumeItemListStart
+        \resumeItem{shiyanlou-logsys}
+          {Built \& maintained ELK+Redis distributed log analytics system;}
+        \resumeItem{shiyanlou-desktop}
+          {Developed a cross-platform Electron Windows/macOS/Linux desktop client;}
+        \resumeItem{shiyanlou-recosys}
+          {Developed a course recommendation system based on collaborative filtering through Python;}
+        \resumeItem{shiyanlou-courses}
+          {Wrote 17 crash and advanced tutorials for C++ users.}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {\href{http://www.medien.ifi.lmu.de}{LMU Media Informatics Group}}{Munich, Germany}
+    %   {Student Research Internship}{Oct. 2016 -- Jan. 2016}
+    %   \resumeItemListStart
+    %     \resumeItem{Research topics}
+    %       {Combining motion sensors and touch offset classify hand Posture and users}
+    %     \resumeItem{Prototyping development}
+    %       {Developed a iOS prototype App for User Study, and finished densely data analysis via Machinea Learning algorithm}
+    %     \resumeItem{Paper report}
+    %       {Finished a report to summarize and conclude all discovering}
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UniWorX Monitor}{Munich, Germany}
+      {Personal Project}{Mar. 2017}
+      \resumeItemListStart
+        \resumeItem{Tech Stack}
+          {Python, Polymer, Node.js Express, Electron}
+        \resumeItem{Description}{Developed an unofficial better LMU UniWorX System with new courses notifications}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Munich Renting Tool}{Munich, Germany}
+      {Personal Project}{Oct. 2016}
+      \resumeItemListStart
+        \resumeItem{Tech Stack}
+          {JavaScript, Python, Google Map API, BeautifulSoup4}
+        \resumeItem{Description}{A location visualization tool for Munich Studentenwerk private savings}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Designing Alternative Contact-free Control Modalities for Smart Watches}{Chengdu, China}
+      {Bachelor Thesis}{Apr.2016 -- Jun.2016}
+      \resumeItemListStart
+        \resumeItem{Tech Stack}
+          {Swift, Node.js, Web Socket, watchOS, iOS, Leap Motion, Git}
+        \resumeItem{Description}{Developed an alternative way -- midair gesture control -- to operate smart watches}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Implementation of Interaction Perception Center}{Chengdu, China}
+      {SWUN National Student-Innovative Project at SWUN Guigu Lab}{Apr. 2014 -- Apr. 2015}
+      \resumeItemListStart
+        \resumeItem{Responsibility}
+          {Team leader and development}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research on Spetical Interaction}{Chengdu, China}
+      {SWUN Normal Student-Innovative Project at SWUN Computer Vision Lab}{Jun. 2013 -- Dec. 2013}
+      \resumeItemListStart
+        \resumeItem{responsibility}
+          {Team leader and development}
+      \resumeItemListEnd
+
+    \resumeSubItem{More Open Source Projects}
+      {\href{https://github.com/changkun/}{github.com/changkun}}
+
+  \resumeSubHeadingListEnd
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages:}{ python; javascript; c; c++; obj-c; swift; markdown/pandoc; \LaTeX; Native Chinese Speaker; Professional Fluent English; Elementary German}
+   }
+   \item{
+    \textbf{Systems/Tools:}{ Mac user; General Linux DevOps; Docker; AWS/DigitalOcean/Aliyun; SQL/MongoDB; zsh/tmux/vim/vscode}
+   }
+   \item{
+    \textbf{Frameworks:}{ numpy/opencv/matplotlib/skearn/tensorflow, flask, jquery/react/vue/polymer/electron, node/express}
+   }
+   \item{
+     \textbf{Knowledges:}{ 
+       \resumeItemListStart
+        \resumeItem{Human Side}
+          { Human-Computer Interaction; User Study; User Experience; Product Prototyping; Human Computation; Social Psychology}
+        \resumeItem{Machine Side}
+          { Machine Learning; Recommendation System; Big Data Mining; Computer Vision; Distributed Computing; Compiler Technique; System Architecture}
+        \resumeItem{Mathematics}
+          { Functional Analysis; Stochastic Process; Analytic Number Theory; Formal Logic and Proof}
+      \resumeItemListEnd
+     }
+   }
+ \resumeSubHeadingListEnd
+\section{Publications}
+ \resumeSubHeadingListStart
+   \item{
+       Changkun Ou.
+       The Fastest Guide of C++11/14. 
+       2016, 
+       \href{https://www.gitbook.com/book/changkun/cpp1x-tutorial/details}{Simplified Chinese}, 
+       \href{https://github.com/changkun/cpp1x-tutorial}{Source Code}
+   }
+   \item{
+       Changkun Ou, Yaxi Chen(responsible professor), Andreas Butz(co-reviwer).
+       Designing Alternative Contact-free Control Modalities for Smart Watches. 
+       2016, Bachelor Thesis. \href{https://changkun.us/files/cv/bachelor-thesis-cn.html}{Simplified Chinese}, 
+       \href{https://changkun.us/files/cv/bachelor-thesis-en.html}{English}
+   }
+   \item{
+       Changkun Ou.
+       Mathematical Modeling Tutorial (Mandarin Chinese Video Series.
+       2016, \href{https://www.youtube.com/watch?v=EUfXE3vP9_A&list=PLwUqqMt5en7c7iZIseCVAS5BX6RPkS-qR}{YouTube Playlist}
+   }
+   \item{
+       Changkun Ou, Yaxi Chen. 
+       Combining Touch Biometrics and Motion Sensors for Hand Posture Recognition and User Authentication System. 
+       Journal of Southwest University for Nationalities(Nature Science Edition). 
+       2016, 42(4):429-435. \href{https://changkun.us/files/cv/touch.swun.html}{Simplified Chinese}
+   }
+   \item{
+       Changkun Ou, Zhaoyang Guo, Yaxi Chen.
+       Space interactions based on monocular vision and simple gestures. 
+       Journal of Southwest University for Nationalities(Natural Science Edition). 
+       2014, 40(16):871-876. \href{https://changkun.us/files/cv/vision.swun.html}{Simplified Chinese}
+   }
+   \item{
+       Changkun Ou, Mu Huang, Mengxin Shi, Jiang Cheng. 
+       A Study in Keep-Right-Except-To-Pass Rule. 
+       2014, MCM Meritorious Winner \href{https://changkun.us/files/cv/28922.public.html}{English}
+   }
+ \resumeSubHeadingListEnd
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {App@Night 2016 hackthon at University of Munich}{Munich, Germany}
+        {IBM IoT team Successful Participant}{Nov. 2016}
+    \resumeSubheading
+        {hackaTUM at Technical University of Munich}{Munich, Germany}
+        {Landeshauptstadt Muenchen Successful Participant}{Nov. 2016}
+    \resumeSubheading
+        {China National Scholarship}{Chengdu, China}
+        {At UESTC}{Sep. 2016}
+    \resumeSubheading
+        {SWUN Bachelor Graduation Thesis Award}{Chengdu, China}
+        {Excellent Thesis}{Jun. 2016}
+    \resumeSubheading
+        {Sichuan Province University Graduates Award}{Chengdu, China}
+        {Outstanding Student}{Jan. 2016}
+    \resumeSubheading
+        {First-class Scholarship}{Chengdu, China}
+        {SWUN Outstanding Student}{Nov. 2015}
+    \resumeSubheading
+        {SWUN College Student-Innovative Activity 2014}{Chengdu, China}
+        {Annual Excellent Project}{Jun. 2015}
+    \resumeSubheading
+        {The National College Student-Innovative Projects}{Chengdu, China}
+        {Concluding Certificate}{Jun. 2015}
+    \resumeSubheading
+        {Sichuan Computer Production Competition}{Chengdu, China}
+        {2nd Award}{May 2015}
+    \resumeSubheading
+        {First-class Scholarship}{Chengdu, China}
+        {SWUN Outstanding Student}{Nov. 2014}
+    \resumeSubheading
+        {China National Scholarship}{Chengdu, China}
+        {At SWUN}{Sep. 2014}
+    \resumeSubheading
+        {Sichuan Computer Production Competition}{Chengdu, China}
+        {2nd Award}{Jun. 2014}
+    \resumeSubheading
+        {Mathematical Contest in Modeling(MCM) 2014}{Chengdu, China}
+        {Meritorious Winner}{Apr. 2014}
+    \resumeSubheading
+        {First-class Scholarship}{Chengdu, China}
+        {SWUN Outstanding Student}{Nov. 2013}
+    \resumeSubheading
+        {Mathematical Contest in Modeling(MCM) 2013}{Chengdu, China}
+        {Successful Participant}{Apr. 2013}
+  \resumeSubHeadingListEnd
+
+\section{Selected Public Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Juejin Translation Project}{\href{https://github.com/xitu/gold-miner}{GitHub}}
+      {Translator, articles translation from English to Chinese}{since Apr. 2017}
+      \resumeItemListStart
+        \resumeItem{Translation}
+          {\href{https://juejin.im/post/5937a61f2f301e006b2879a9}{How to build complex user interfaces without going completely insane}}
+        \resumeItem{Proofreading}
+          {\href{https://github.com/xitu/gold-miner/pull/1603}{Everyone is a designer. Get over it.}}
+        \resumeItem{Translation}
+          {\href{https://juejin.im/post/5915880b570c35006932fac9}{How to pretend you’re a great designer}}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Personal Translation}{}
+      {Translation from English to Chinese}{since May 2016}
+      \resumeItemListStart
+        \resumeItem{\href{https://github.com/changkun/LeapDocCN}{Leap Motion Official Development Documentation Translation}}
+          {full translation}
+        \resumeItem{\href{http://swift.gg/2016/05/18/api-design-guidelines/}{Swift 3 API Design Guidelines}}
+          {full translation}
+        \resumeItem{\href{https://github.com/numbbbbb/the-swift-programming-language-in-chinese}{The Swift Programming Language Chinese Translation}}
+          {responsible for Release Changes chapter}
+      \resumeItemListEnd
+
+    \resumeSubheading
+        {Academic Tutor}{Chengdu, China}
+        {Cooperation lecture “Human-Computer Interaction I” between LMU and SWUN}{Jul. 2015}
+
+    \resumeSubheading
+        {Student Volunteer}{Chengdu, China}
+        {for Conference Smart Graphics 2015}{Aug. 2015}
+
+    \resumeSubheading
+        {SWUN Guigu Lab Team Leader}{Chengdu, China}
+        {Tutorial for members applying projects}{Sep. 2014 -- Jun. 2015}
+
+    \resumeSubheading
+        {Mathematical Modeling Association Academic Vice Director}{Chengdu, China}
+        {Academic tutorial for new members}{Oct. 2012 -- Jun. 2014}
+
+    \resumeSubheading
+        {Computer Application and Development Association Core Member}{Chengdu, China}
+        {Programming tutorial for new members}{Oct. 2012 -- Dec. 2013}
+
+    \resumeSubheading
+        {SWUN Organization federation Excutive Member}{Chengdu, China}
+        {Design \& Organization}{Oct. 2012 -- Jun. 2013}
+  \resumeSubHeadingListEnd
+\end{document}
