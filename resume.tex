@@ -64,6 +64,11 @@ pdfkeywords={Resume, Ou Changkun},
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
+\usepackage{fancyhdr} 
+\usepackage{lastpage}
+\fancyhf{}
+\cfoot{\thepage\ of \pageref{LastPage}}
+\pagestyle{fancy}  
 
 \begin{document}
 %----------HEADING-----------------
@@ -81,6 +86,13 @@ Munich, Germany                                      &  \href{mailto:hi@changkun
     \resumeSubheading
       {Southwest University for Nationalities}{Chengdu, China}
       {Bachelor of Engineering in Computer Science;  GPA: 3.74/4.0 (1/154)}{Sep. 2012 -- Jun. 2016}
+    \resumeSubheading
+      {COURSERA}{MOOC platform}
+      {Andrew Ng: Deep Learning Specializations, certificates:
+       \href{https://www.coursera.org/account/accomplishments/verify/YH4NT7HHN263}{1}, 
+       \href{https://www.coursera.org/account/accomplishments/verify/QGH3GNGF6BM4}{2}, 
+       \href{https://www.coursera.org/account/accomplishments/verify/6VU45R2SZEF6}{3}}
+      {Oct. 2017}
   \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
@@ -89,32 +101,39 @@ Munich, Germany                                      &  \href{mailto:hi@changkun
       {\href{https://magiclingua.com/}{MagicLingua}}{Munich, Germany}
       {Fullstack Development (Praktikum)}{Apr. 2017 -- Aug. 2017}
       \resumeItemListStart
-        \resumeItem{alexa-skill}
-          {Developed voice interaction interface for English learner based on Amazon Alexa.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
+        \resumeItem{Voice Assistant}
+          {Conversational Design; Nature Language Processing; Backend development; AWS serverless \& DynamoDB}
+    \resumeItemListEnd
     \resumeSubheading
       {\href{https://shiyanlou.com/}{Shiyanlou}}{Chengdu, China}
       {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
       \resumeItemListStart
-        \resumeItem{shiyanlou-logsys}
-          {Built \& maintained ELK+Redis distributed log analytics system;}
-        \resumeItem{shiyanlou-desktop}
-          {Developed a cross-platform Electron Windows/macOS/Linux desktop client;}
-        \resumeItem{shiyanlou-recosys}
-          {Developed a course recommendation system based on collaborative filtering through Python;}
-        \resumeItem{shiyanlou-courses}
-          {Wrote 17 course crash and advanced tutorials for C++ users.}
-      \resumeItemListEnd
+        \resumeItem{Distributed log system}
+          {Distributed log system maintainer; ELK+Redis tech stack}
+        \resumeItem{Desktop Client}
+          {Cross-platform desktop client development; Electron based}
+        \resumeItem{Recommendation system}
+          {Course recommendation system based; Python wirtten}
+        \resumeItem{Wirtten courses}
+          {17 written tutorials for C++ users}
+    \resumeItemListEnd
+    \resumeSubheading
+      {\href{http://www.medien.ifi.lmu.de}{LMU Media Informatics Group}}{Munich, Germany}
+      {Student Research Internship}{Oct. 2016 -- Jan. 2016}
+      \resumeItemListStart
+        \resumeItem{Research topics}
+          {Combining motion sensors and touch offset classify hand Posture and users}
+        \resumeItem{Works}
+          {iOS prototyping; Machine Learning based appraoch; paper reporting}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Open Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Open Source Projects}
       {\href{https://github.com/changkun/}{github.com/changkun}}
-    \resumeSubItem{Translation Works (English to Chinese)}
-      {\href{https://github.com/xitu/gold-miner/pulls?q=is\%3Apr\%20changkun}{github.com/xitu/gold-miner}}
+    \resumeSubItem{Translation Works}
+      {\href{https://github.com/changkun/translation}{github.com/changkun/translation}}
   \resumeSubHeadingListEnd
 %--------SKILLS------------
 \section{Skills}
@@ -129,25 +148,35 @@ Munich, Germany                                      &  \href{mailto:hi@changkun
    }
    \item{
     \textbf{Systems/Tools:}{ 
-      \textbf{Mac} user; General \textbf{Linux DevOps}; \textbf{serverless};
+      \textbf{macOS} user; General \textbf{Linux DevOps}; \textbf{serverless};
       \textbf{Docker}; AWS/DigitalOcean/Aliyun; 
       RESTful/GraphQL;
       SQL/\textbf{MongoDB}/Redis; 
       zsh/tmux/vim/vscode; 
-      Sketch/PS/PR/AE/AU
+      PS/PR/AE/AU
     }
    }
    \item{
     \textbf{Frameworks:}{ 
-      \textbf{numpy}/\textbf{opencv}/matplotlib/\textbf{skearn}/\textbf{tensorflow}/keras, 
+      \textbf{numpy}/\textbf{opencv}/matplotlib/\textbf{skearn}/\textbf{tensorflow}/\textbf{keras}, 
       flask/django, 
-      \textbf{jquery}/\textbf{react}/vue/polymer/\textbf{electron}, 
+      \textbf{jquery}/\textbf{angular}/polymer/\textbf{electron}, 
       \textbf{node}/express
     }
    }
    \item{
      \textbf{Knowledge:}{ 
        \resumeItemListStart
+        \resumeItem{Machine Side}
+        { 
+          \textbf{Machine Learning; Deep Learning};
+          Recommendation System; 
+          \textbf{Data Mining}; 
+          \textbf{Computer Vision}; 
+          Distributed Computing; 
+          Compiler Technique; 
+          System Architecture
+        }
         \resumeItem{Human Side}
           { 
             \textbf{Human-Computer Interaction}; 
@@ -156,16 +185,6 @@ Munich, Germany                                      &  \href{mailto:hi@changkun
             Product Design; 
             Human Computation; 
             Social Psychology
-          }
-        \resumeItem{Machine Side}
-          { 
-            \textbf{Machine Learning}; 
-            Recommendation System; 
-            \textbf{Data Mining}; 
-            \textbf{Computer Vision}; 
-            Distributed Computing; 
-            Compiler Technique; 
-            System Architecture
           }
         \resumeItem{Mathematics}
           { 

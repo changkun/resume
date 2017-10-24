@@ -1,8 +1,5 @@
 all:
-	make cv
 	make resume
-	make letter
-	make clean
 cv:
 	xelatex cv.tex
 resume:
