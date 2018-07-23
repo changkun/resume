@@ -1,10 +1,11 @@
 # Resume & Curriculum Vitae
-This repository represent my resume and curriculum vitae.
+This repository represent my personal resume and curriculum vitae.
 
 ## Contents
 
-* [Resume](./resume/resume.pdf)
-* [Curriculum Vitae](./cv/cv.pdf)
+- [Resume](./resume/resume.pdf)
+- [Curriculum Vitae](./cv/cv.pdf)
+    +  [Optimized for Machine Learning](./cv-ml/cv-ml.pdf)
 
 ## License
 
