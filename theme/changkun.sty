@@ -1,4 +1,9 @@
 \ProvidesPackage{changkun}
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -24,9 +29,14 @@ pdfkeywords={Resume, Ou Changkun},
   urlcolor=linkcolor,
   linkcolor=linkcolor
 }
+
+% page number
+\usepackage{lastpage}
+\usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhead{}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 % Adjust margins
