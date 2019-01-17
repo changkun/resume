@@ -2,6 +2,7 @@ all: resume cv
 resume: clean
 	echo '\setboolean{cv}{false}' > condition.tex
 	latexmk -xelatex resume.tex
+	make clean
 cv: clean
 	echo '\setboolean{cv}{true}' > condition.tex
 	latexmk -xelatex resume.tex -jobname=cv
