@@ -5,7 +5,7 @@ personal resume & curriculum vitae
 ## Contents
 
 - [Resume](./resume/resume.pdf)
-- [Curriculum Vitae](./cv/cv.pdf)
+- [Curriculum Vitae](./resume/cv.pdf)
 
 ## License
 

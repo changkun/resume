@@ -1,6 +1,0 @@
-all: cv
-cv: clean
-	latexmk -xelatex cv.tex
-	make clean
-clean:
-	rm -rf *.log *.aux *.out *.fls *.fdb_latexmk *.gz *.xdv
