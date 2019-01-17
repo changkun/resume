@@ -4,6 +4,11 @@
     Path = /usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fontawesome/ }
 \usepackage{fontawesome}
 
+% conditional compile
+\usepackage{ifthen}
+\newboolean{cv}
+\newboolean{en-us}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
