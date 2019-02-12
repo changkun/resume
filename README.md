@@ -9,7 +9,7 @@ personal resume & curriculum vitae
 
 ## License
 
-Unauthorized using, copying, modifying and districuting, via any medium
+Unauthorized using, copying, modifying and distributing, via any medium
 is strictly prohibited.
 
 [Copyright &copy; 2015 - Present Changkun Ou. All rights reserved.](./LICENSE)
