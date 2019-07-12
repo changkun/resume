@@ -14,6 +14,7 @@
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage{color,xcolor}
+\usepackage{tabularx}
 \usepackage[
   pdfauthor={Ou Changkun},
   pdftitle={Resume},
@@ -66,10 +67,10 @@
 }
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \begin{tabularx}{0.97\textwidth}{X@{\extracolsep{\fill}}@{\hskip 0.2in}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabularx}\vspace{-5pt}
 }
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \renewcommand{\labelitemii}{$\circ$}
@@ -77,3 +78,4 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStartNoLabel}{\begin{itemize}[leftmargin=*,label={}]}
