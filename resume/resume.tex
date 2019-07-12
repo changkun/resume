@@ -1,15 +1,28 @@
 \documentclass[letterpaper,11pt]{article}
 \usepackage{../theme/changkun}
 \begin{document}
+
 \input{./condition}
 \input{../components/header}
+
+\ifthenelse{\boolean{cv}}{
+\input{../components/about}
+}{}
+
 \input{../components/education}
+
+\ifthenelse{\boolean{cv}}{
+% \input{../components/publications}
+% \input{../components/talks}
 \input{../components/work}
 \input{../components/skills}
 \input{../components/projects}
-\input{../components/awards}
-% \input{../components/publications} // FIXME: wtf error??
-% \input{../components/talks} // FIXME: wtf error???
 \input{../components/activities}
+\input{../components/awards}
 \input{../components/personal}
+}{
+\input{../components/work}
+\input{../components/skills}
+\input{../components/projects}
+}
 \end{document}
