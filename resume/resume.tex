@@ -10,19 +10,16 @@
 }{}
 
 \input{../components/education}
+\input{../components/work}
+\input{../components/skills}
+\input{../components/projects}
 
 \ifthenelse{\boolean{cv}}{
 % \input{../components/publications}
 % \input{../components/talks}
-\input{../components/work}
-\input{../components/skills}
 \input{../components/projects}
 \input{../components/activities}
 \input{../components/awards}
 \input{../components/personal}
-}{
-\input{../components/work}
-\input{../components/skills}
-\input{../components/projects}
-}
+}{}
 \end{document}
