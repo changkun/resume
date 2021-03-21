@@ -1,6 +1,14 @@
-\section{\textbf{Education}}
+
+\ifthenelse{\boolean{en}} {
+  \section{\textbf{Education}}
+}{
+  \section{\textbf{教育经历}}
+}
+
+
   \resumeSubHeadingListStartNoLabel
 
+\ifthenelse{\boolean{en}} {
   \resumeSubheading
     {University of Munich (LMU)}{Munich, Germany}
     {Ph.D. Candidate in Media Informatics.
@@ -11,13 +19,27 @@
     % models visual preference elicitation process to understand user behavior in 3D modeling,
     % and develops efficient algorithms or industrial tools for real-time 3D rendering.}
     }{Feb. 2019 -- Present}
+}{
+  \resumeSubheading
+    {慕尼黑大学}{慕尼黑, 德国}
+    {媒体信息学（博士候选人）
+    }{2019.02 -- 至今}
+}
 
-  \ifthenelse{\boolean{cv}}{
+\ifthenelse{\boolean{cv}}{
+  \ifthenelse{\boolean{en}} {
+  \resumeSubheading
+    {University of Munich}{Munich, Germany}
+    {Master of Science in Computer Science; GPA: 2.05/1.00}{Apr. 2018 -- Jan. 2019}
+  }{
     \resumeSubheading
-      {University of Munich}{Munich, Germany}
-      {Master of Science in Computer Science; GPA: 2.05/1.00}{Apr. 2018 -- Present}
-  }{}
+      {慕尼黑大学}{慕尼黑, 德国}
+      {计算机科学（科学硕士）; 绩点: 2.05/1.00}{2018.04 -- 2019.01}
+  }
+}{}
 
+
+\ifthenelse{\boolean{en}} {
   \resumeSubheading
     {University of Munich}{Munich, Germany}
     {Master of Science in Human-Computer Interaction (HCI); GPA: 1.63/1.00
@@ -35,7 +57,7 @@
     % }
   }{Oct. 2016 -- Jan. 2019}
   \resumeItemListStart
-    % \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/transcript-master-hci.pdf}{Link}}
+    \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/transcript-master-hci.pdf}{Link}}
     \resumeItem{Thesis}{
       \emph{Understanding and Predicting Web Browsing Behavior}. 
       % The thesis proposed a sequence to sequence machine learning model that studied 
@@ -47,16 +69,37 @@
       % browsing data is better for classification and prediction of user’s web browsing behaviors.
     }
   \resumeItemListEnd
+}{
+  \resumeSubheading
+  {慕尼黑大学}{慕尼黑, 德国}
+  {人机交互（科学硕士）; 绩点: 1.63/1.00
+}{2016.10 -- 2019.01}
+\resumeItemListStart
+  \resumeItem{相关材料}{
+    \href{https://github.com/changkun/resume/blob/master/assets/transcript-master-hci.pdf}{成绩单}.
+    \textbf{毕业论文}: \href{https://github.com/changkun/MasterThesisHCI}{网络浏览行为的理解与预测}.
+  }
+\resumeItemListEnd
+}
 
-  \ifthenelse{\boolean{cv}}{
-      \resumeSubheading
-      {University of Electronic Science and Technology of China (UESTC)}{Chengdu, China}
-      {Master of Engineering in Software Engineering}{Aug. 2016 -- Sep. 2016}
-      % \resumeSubheading
-      %   {University of Munich}{Munich, Germany}
-      %   {Exchange Student}{Sep. 2015 -- Feb. 2016}
-  }{}
+\ifthenelse{\boolean{cv}}{
 
+  \ifthenelse{\boolean{en}} {
+    \resumeSubheading
+    {University of Electronic Science and Technology of China (UESTC)}{Chengdu, China}
+    {Master of Engineering in Software Engineering}{Aug. 2016 -- Sep. 2016}
+    % \resumeSubheading
+    %   {University of Munich}{Munich, Germany}
+    %   {Exchange Student}{Sep. 2015 -- Feb. 2016}
+  }{
+    \resumeSubheading
+    {电子科技大学}{成都, 中国}
+    {软件工程（工程硕士研究生）}{2016.08 -- 2016.09}
+  }
+
+}{}
+
+\ifthenelse{\boolean{en}} {
     \resumeSubheading
       {Southwest University for Nationalities (SWUN)}{Chengdu, China}
       {Bachelor of Engineering in Computer Science;  Grade: 3.74/4.00, ``Top 1 Student''.
@@ -69,7 +112,7 @@
       %   I received an excellent grade in all mathematics courses.}
       }{Sep. 2012 -- Jul. 2016}
       \resumeItemListStart
-        % \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/bachelor-transcript.pdf}{Link}}
+        \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/bachelor-transcript.pdf}{Link}}
         \resumeItem{Thesis}{
           \emph{Designing Alternative Contact-free Control Modalities for Smart Watches}.
           % The thesis explores all existing interaction techniques on smartwatch products 
@@ -78,20 +121,50 @@
           % higher acceptance and comfortability than existing interactions.
         }
       \resumeItemListEnd
+}{
+  \resumeSubheading
+    {西南民族大学}{成都, 中国}
+    {计算机科学工程学士; 绩点: 3.74/4.00, 专业排名第一.
+    }{2012.09 -- 2016.07}
+    \resumeItemListStart
+      \resumeItem{相关材料}{
+        \href{https://github.com/changkun/resume/blob/master/assets/bachelor-transcript.pdf}{成绩单}
+        \textbf{毕业论文}: \href{https://changkun.de/s/bachelorthesis}{智能手表的非接触式备择交互模式的设计}.
+      }
+    \resumeItemListEnd
+}
 
-  \ifthenelse{\boolean{cv}}{
-    \resumeSubheading
-      {First Middle School of Zhijiang}{Huaihua, China}
-      {Senior Middle School; With university entrance examination (Gaokao)}{Mar. 2010 -- Jul. 2012}
-    \resumeSubheading
-      {Changsha Foreign Language School}{Changsha, China}
-      {Senior Middle School}{Aug. 2009 -- Feb. 2010}
-    \resumeSubheading
-      {Second Middle School of Zhijiang}{Huaihua, China}
-      {Junior Middle School}{Sep.2006 -- Jul.2009}
-    \resumeSubheading
-      {Chengnan Primary School of Zhijiang}{Huaihua, China}
-      {Primary School}{Sep. 2000 -- Jul. 2006}
-  }{}
+
+\ifthenelse{\boolean{cv}}{
+
+\ifthenelse{\boolean{en}} {
+  \resumeSubheading
+    {First Middle School of Zhijiang}{Huaihua, China}
+    {Senior Middle School; With university entrance examination (Gaokao)}{Mar. 2010 -- Jul. 2012}
+  \resumeSubheading
+    {Changsha Foreign Language School}{Changsha, China}
+    {Senior Middle School}{Aug. 2009 -- Feb. 2010}
+  \resumeSubheading
+    {Second Middle School of Zhijiang}{Huaihua, China}
+    {Junior Middle School}{Sep.2006 -- Jul.2009}
+  \resumeSubheading
+    {Chengnan Primary School of Zhijiang}{Huaihua, China}
+    {Primary School}{Sep. 2000 -- Jul. 2006}
+}{
+  \resumeSubheading
+    {芷江第一中学}{怀化, 湖南}
+    {高级中学; 参加高考}{2010.03 -- 2012.07}
+  \resumeSubheading
+    {长沙外国语中学}{长沙, 湖南}
+    {高级中学}{2009.08 -- 2010.02}
+  \resumeSubheading
+    {芷江第二中学}{怀化, 湖南}
+    {初级中学}{2006.09 -- 2009.07}
+  \resumeSubheading
+    {芷江城南小学}{怀化, 湖南}
+    {小学}{2000.09 -- 2006.07}
+}
+
+}{}
 
   \resumeSubHeadingListEnd

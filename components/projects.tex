@@ -1,4 +1,10 @@
-\section{\textbf{Open Source Contribution}}
+\ifthenelse{\boolean{en}} {
+  \section{\textbf{Open Source Contribution}}
+}{
+  \section{\textbf{开源贡献}}
+}
+
+\ifthenelse{\boolean{en}} {
   \resumeSubHeadingListStart
     \resumeSubItem{\href{http://github.com/tensorflow/tensorflow/}{Tensorflow} (151+ stars)}{Contributor}
     \resumeSubItem{\href{http://github.com/golang/go/}{Go} (79.6k+ stars)}{Contributor}
@@ -26,3 +32,25 @@
     \resumeSubItem{Check my GitHub homepage for more projects}
     {\href{https://github.com/changkun/}{github.com/changkun}}
   \resumeSubHeadingListEnd
+}{
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{http://github.com/tensorflow/tensorflow/}{Tensorflow} (151+ stars)}{贡献者}
+    \resumeSubItem{\href{http://github.com/golang/go/}{Go} (79.6k+ stars)}{贡献者}
+    % \resumeSubItem{\href{http://github.com/golang/go/}{etcd} (28.2k+ stars)}{Contributor}
+    \resumeSubItem{\href{https://github.com/changkun/modern-cpp-tutorial}{现代 C++ 教程} (10.3k+ stars)}
+    {作者}
+    \resumeSubItem{\href{https://golang.design}{golang.design 计划}}
+    {组织创办人}
+    \resumeSubItem{\href{https://github.com/changkun/go-under-the-hood}{Go under the hood} (2.4k stars)}
+    {作者}
+    \resumeSubItem{\href{https://github.com/xitu/tensorflow-docs}{Official Tensorflow document translation} (3.7k+ stars)}
+    {主要贡献者}
+    \resumeSubItem{\href{https://github.com/xitu/gold-miner}{Juejin Translation Public Community} (27.8k+ stars)}
+    {主要贡献者}
+    \resumeSubItem{\href{https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese}{The Swift Programming Language Chinese Translation} (19.9k+ stars)}
+    {贡献者}
+    \resumeSubItem{查看 GitHub 主页以了解更多项目：}
+    {\href{https://github.com/changkun/}{github.com/changkun}}
+  \resumeSubHeadingListEnd
+}

@@ -1,6 +1,13 @@
+
 \ifthenelse{\boolean{cv}}{
 
-\section{\textbf{Personal Interests}}
+\ifthenelse{\boolean{en}} {
+  \section{\textbf{Personal Interests}}
+}{
+  \section{\textbf{个人兴趣}}
+}
+
+\ifthenelse{\boolean{en}} {
   \resumeSubHeadingListStart
     \resumeSubItem{Open source contributions}
       {Writting open source book; Contributing and maintaining open source softwares}
@@ -11,6 +18,20 @@
     \resumeSubItem{Video gaming}
       {Sony Playstation and Nintendo Switch player}
   \resumeSubHeadingListEnd
+}{
+  \resumeSubHeadingListStart
+    \resumeSubItem{开源贡献}
+      {参与开源项目}
+    \resumeSubItem{视频博客}
+      {在 \href{https://www.youtube.com/channel/UCtujb7c9eudbVEkAsIRZR3w}{YouTube} 进行视频创作}
+    \resumeSubItem{自由写作}
+      {在 \href{https://blog.changkun.de/}{https://blog.changkun.de} 和 \href{https://golang.design/research}{https://golang.design/research} 上进行写作}
+    \resumeSubItem{游戏}
+      {单机游戏玩家}
+  \resumeSubHeadingListEnd
+}
+
+\ifthenelse{\boolean{en}} {
 
 \section{\textbf{References}}
   \resumeSubHeadingListStart
@@ -29,5 +50,8 @@
     \resumeSubItem{Prof. Wei Zhou}
       {Southwest University for Nationalities, Chengdu, China}
   \resumeSubHeadingListEnd
+
+}{
+}
 
 }{}

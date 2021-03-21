@@ -1,5 +1,11 @@
 
+\ifthenelse{\boolean{en}} {
 \section{\textbf{Honors \& Awards}}
+}{
+\section{\textbf{奖项与荣誉}}
+}
+
+\ifthenelse{\boolean{en}} {
   \resumeSubHeadingListStart
     \resumeSubheading
         {Papers with Special Recognitions}{Munich, Germany}
@@ -35,3 +41,42 @@
         {American Mathematical Contest in Modeling(MCM) 2014}{Chengdu, China}
         {Meritorious Winner}{Apr. 2014}
   \resumeSubHeadingListEnd
+}{
+
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {CHI 2019 特殊表彰}{慕尼黑, 德国}
+        {优秀审稿}{2019.11}
+    \resumeSubheading
+        {西门子 AI 实验室黑客马拉松}{慕尼黑, 德国}
+        {二等奖}{2017.11}
+    \resumeSubheading
+        {国家奖学金}{成都, 中国}
+        {UESTC}{2016.09}
+    \resumeSubheading
+        {本科优秀毕业论文}{成都, 中国}
+        {SWUN}{2016.06}
+    \resumeSubheading
+        {省优秀毕业生}{成都, 中国}
+        {四川省}{2016.01}
+\ifthenelse{\boolean{cv}}{
+    \resumeSubheading
+        {优秀学生奖学金}{成都, 中国}
+        {SWUN}{2015.01}
+    \resumeSubheading
+        {学生创新年度优秀项目}{成都, 中国}
+        {SWUN}{2015.06}
+    \resumeSubheading
+        {计算机作品赛}{成都, 中国}
+        {四川省二等奖}{2015.05}
+}{}
+    \resumeSubheading
+        {国家奖学金}{成都, 中国}
+        {SWUN}{2014.09}
+
+    \resumeSubheading
+        {美国数学建模竞赛(MCM) 2014}{成都, 中国}
+        {一等奖（Meritorious Winner）}{2014.04}
+  \resumeSubHeadingListEnd
+
+}

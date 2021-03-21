@@ -1,8 +1,7 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt]{ctexart}
 \usepackage{../theme/changkun}
 \begin{document}
 
-\input{./condition}
 \input{../components/header}
 
 \ifthenelse{\boolean{cv}}{
@@ -19,7 +18,6 @@
 \input{../components/awards}
 
 \ifthenelse{\boolean{cv}}{
-\input{../components/projects}
 \input{../components/activities}
 \input{../components/personal}
 }{}

@@ -77,3 +77,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStartNoLabel}{\begin{itemize}[leftmargin=*,label={}]}
+
+\input{./condition}
+\ifthenelse{\boolean{en}} {
+  \CTEXoptions[today=old]
+}{
+}
