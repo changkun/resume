@@ -1,28 +1,23 @@
 \ifthenelse{\boolean{en}} {
-\section{\textbf{Work Experiences}}
+\section{\textbf{Professional Experience}}
 }{
 \section{\textbf{工作经历}}
 }
-
-
-  \resumeSubHeadingListStartNoLabel
-
+\small
+\resumeSubHeadingListStartNoLabel
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
-      {Research Assistant}{Munich, Germany}
-      {University of Munich}{Aprl. 2018 -- Present}
+      {Research Associate}{Munich, Germany}
+      {\href{https://lmu.de/}{LMU Munich}}{Aprl. 2018 -- Present}
       \resumeItemListStart
-      \resumeItem{Instructor}{I am responsible for the design and teaching of the \href{http://www.medien.ifi.lmu.de/lehre/ws2021/gp/}{Practical Geometry Processing} course. In the class, I mainly teach students about geometry processing algorithms, practice how to implement them from scratch, and eventually writing reproducible rendering scripts in Blender. Resources are on \href{https://github.com/mimuc/gp-ws2021}{GitHub}.}
-      \resumeItem{DevOps}{I am responsible for compatibility development work and the execution of the eventual migration operation of a 15 years old PHP and SVN-based CMS system that was developed in 2005. Resources are on \href{https://github.com/changkun/destrictor}{GitHub}.}
-      \resumeItem{Teaching assistant}{I am responsible for the design and organization of the practical part of the Lecture \href{http://www.medien.ifi.lmu.de/lehre/ss20/cg1/}{Computer Graphics}. Behind the scene, the whole coding exercises are redesigned for the fit of modern topics in graphics. Resources are on \href{https://github.com/mimuc/cg1-ss20}{GitHub}.}
-      \resumeItem{Teaching assistant}{I am one of the responsible people for the design and organization of the practical part of Lecture \href{http://www.medien.ifi.lmu.de/lehre/ws1920/omm/}{Online Multimedia}. Behind the scene, I bring novel web development topics into the teaching, such as React, Docker, Kubernetes, etc. Resources are on \href{https://github.com/mimuc/omm-ws1920}{GitHub}.}
-      \resumeItem{Teaching assistant}{I am responsible for the organization of \href{http://www.medien.ifi.lmu.de/lehre/ws1920/hs/}{Seminar Advances in Computer Graphics}.}
-      \resumeItem{Tutor}{\href{http://www.dbs.ifi.lmu.de/cms/studium_lehre/lehre_master/deep1819/index.html}{Deep Learning and Artificial Intelligence}, notes on \href{https://github.com/changkun/ss18-machine-learning-tutorial}{GitHub}}
-      \resumeItem{Tutor}{\href{http://www.dbs.ifi.lmu.de/cms/studium_lehre/lehre_master/ml18/index.html}{Machine Learning}, notes on \href{https://github.com/changkun/ws-18-19-deep-learning-tutorial}{GitHub}.}
+      \resumeItem{As researcher}{research on human-in-the-loop machine learning graphics systems}
+      \resumeItem{As teacher}{teach 12 classes and supervising more than 20 student thesis and seminars}
+      \resumeItem{As developer}{develop, migrate, and maintain a 17 year-old \href{https://www.medien.ifi.lmu.de/}{university} \href{https://github.com/changkun/destrictor}{CMS system}, and a 13 year-old \href{https://barkeeper.medien.ifi.lmu.de/}{collaborative system}
+      }
       \resumeItemListEnd
   }{
     \resumeSubheading
-      {研究助理}{慕尼黑, 德国}
+      {博士研究员}{慕尼黑, 德国}
       {慕尼黑大学}{2018.04 -- Present}
       \resumeItemListStart
       \resumeItem{讲师}{我负责了\href{http://www.medien.ifi.lmu.de/lehre/ws2021/gp/}{实用几何处理}课程的设计和教学。在课堂里，我主要教授学生有关几何处理的算法知识，练习如何从头开始实现这些算法，以及
@@ -35,51 +30,22 @@
       \resumeItem{学生助教}{我负责了\href{http://www.dbs.ifi.lmu.de/cms/studium_lehre/lehre_master/ml18/index.html}{机器学习}课程的事件部分的教学，教学笔记在 \href{https://github.com/changkun/ws-18-19-deep-learning-tutorial}{GitHub} 上公开可见}
       \resumeItemListEnd
   }
-
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
-      {Backend Software Engineer (Remote)}{Chengdu, China}
+      {Backend Software Engineer (Remote)}{Munich, Germany}
       {\href{https://labex.io/}{LabEx Technology Ltd}}{Apr. 2018 -- Jan. 2019}
       \resumeItemListStart
-      \resumeItem{Team leader and leading backend development of the oversea product}{
-        I lead and responsible for the product development in backend and frontend. 
-        I evolve the existing architecture and split a monolithic backend web application 
-        into multiple microservices. 
-        The product scales machine cluster from 20 to 200 for active daily users, 
-        and its user group increases from 5k to 30k during my incumbency.
+      \resumeItem{As team leader}{leading developments of an oversea product;
+        established microservice based backend architecture;
+        the product autoscales cloud instances (on AWS/AlibabaCloud) ranging from 20 to 200;
+        the product user group grows from 5k to 30k during my 10 months incumbency.
       }
-      \resumeItem{Remote desktop control proxy}{
-        I responsible for and developed a middleware that provides generic remote desktop proxy in Go. 
-        The proxy translates VNC/RDP/SSH protocol data, 
-        and establish WebSocket connection to a web browser for providing remote desktop GUI.
+      \resumeItem{As a developer}{1) developed a scalable remote desktop proxy (support WebSocket to VNC/RDP/SSH protocols) using Go; 2) developed an automated multi-cloud resource management microservice that abstracts cross cloud providers (supports AWS/AlibabaCloud over 15 cloud products, e.g., IAM/EC2/VPC/etc), scales and used by 10k+ users; 3) developed a kubernetes-like container and instance hybrid management service.
       }
-      \resumeItem{Multi-cloud automation}{
-        I developed a fully automated multi-cloud resource management microservice in Go. 
-        The service defines a general abstraction cross all cloud provider, 
-        it automatically manages all user requested resources allocation and 
-        releases outdated resources. 
-        For instance, a user of the service can allocate new cloud instances 
-        for temporal using without noticing the instance was allocated in either AWS, AlibabaCloud, or others. 
-        The service supports more than 15 cloud products and integrated 3 cloud providers, 
-        being able to support almost unlimited concurrent users and has been used by 10k+ users.
-      }
-      \resumeItem{Cluster management service}{
-        I developed a microservice in Go that similar to Kubernetes and Docker Swarm. 
-        The service manages multiple server clusters, 
-        and auto-scaling its cluster size upon request cross multiple cloud providers. 
-        Each cluster contains multiple physical machines, 
-        and each machine runs many docker containers. 
-        The key feature of the service eliminates the difference between the physical machine 
-        and the docker container. 
-        The runtime of the service includes a system monitor with request prediction algorithm 
-        that I invented for efficient auto-scaling with consideration of overcommit ratio 
-        and a task scheduler for managing all distributed asynchronous task execution 
-        with two-level caching optimization.
-      }
-      \resumeItem{Used tech. stack}{
-        Vue, jQuery, Webpack, Electron; 
-        Backend: Go, Cgo, Gin, Beego, gRPC, MySQL, MongoDB, Redis, Hypervisor, Nginx, 
-        Docker, Kubernetes, AWS, AlibabaCloud, etc.}
+      \resumeItem{Involved techniques}{
+        Frontend: Vue, jQuery, Webpack, Electron;
+        Backend: Go, Cgo, Gin, Beego, gRPC, MySQL, MongoDB, Redis, Hypervisor, Nginx,
+        Docker, Kubernetes, AWS, AlibabaCloud, etc}
       \resumeItemListEnd
   }{
     \resumeSubheading
@@ -111,31 +77,20 @@
       并考虑了过量使用率和一个任务计划程序，用于管理所有分布式异步任务执行，具有两级缓存优化。
     }
     \resumeItem{涉及的技术栈}{
-      Backend: Go, Cgo, Gin, Beego, gRPC, MySQL, MongoDB, Redis, Hypervisor, Nginx, 
+      Backend: Go, Cgo, Gin, Beego, gRPC, MySQL, MongoDB, Redis, Hypervisor, Nginx,
       Docker, Kubernetes, AWS, AlibabaCloud, etc;
-      Frontend: Vue, jQuery, Webpack, Electron. }
+      Frontend: Vue, jQuery, Webpack, Electron}
     \resumeItemListEnd
   }
-
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
     {Fullstack Engineer (Freelance)}{Munich, Germany}
     {\href{https://magiclingua.com/}{Rocketlingo UG}}{Nov. 2017 -- Mar. 2018}
     \resumeItemListStart
-      \resumeItem{Language teaching voice bot}
-        {I am part of the team in developing a voice bot that provides English learning teaching service. 
-        The bot can communicate with its user and improve their English skill by the real-time response. 
-        My responsibility is to implement the backend support designed conversations using Amazon Alexa.}
-      \resumeItem{Speech recognition solution \& Web development}{
-        I responsible for the development of speech recognition solution over web technologies, 
-        such as using WebSocket for audio streaming, 
-        using Google Cloud STT and TTS services for speech recognition and synthesis, etc. 
-        The challenging part of using existing speech recognition service for 
-        a language learning application is a new language learner sometimes does not produces 
-        positive audio samples, and even multilingual. 
-        Therefore, I developed many text-based falt tolerances technique 
-        for improving the understanding of user speech based on machine learning algorithms.
-      }
+    \resumeItem{As developer}{developed a voice bot to support novice language learner to improve their language skills by real-time voice recognition and synthesis (supports web and Amazon Alexa), optimize for audio streaming and multilingual falt tolerances using machine learning
+    }
+    \resumeItem{Involved techniques}{
+      TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; etc}
     \resumeItemListEnd
   }{
     \resumeSubheading
@@ -155,27 +110,22 @@
       }
     \resumeItemListEnd
   }
-
   \ifthenelse{\boolean{cv}}{
-
     \ifthenelse{\boolean{en}} {
       \resumeSubheading
-        {\href{https://shiyanlou.com/}{Shiyanlou}}{Chengdu, China}
-        {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
+        {Software Engineer (Intern)}{Chengdu, China}
+        {\href{https://shiyanlou.com/}{Shiyanlou}}{Jun. 2016 -- Sep. 2016}
         \resumeItemListStart
-          \resumeItem{Recommendation System}
-            {Online course recommendation system; Python; MongoDB; Collaborate Filtering}
-          \resumeItem{Distributed Log System}
-            {Elasticsearch; Logstash; Kibana; Redis}
-          \resumeItem{Cross Platform Desktop Client}
-            {Electron based development for macOS/Windows/Linux}
-          \resumeItem{Teaching Meterial Writing}
-            {Modern C++ based teaching meterial writing}
+        \resumeItem{As developer}{developed a cross-platform desktop software using Electron; developed a recommendation system for E-learning recommendation;
+        deployed and operates a logging system for internal data analysis
+        }
+        \resumeItem{As writer}{wrote more than 20+ professional educational materials regarding C++}
+        \resumeItem{Involved techniques}{
+          C++; Python; MongoDB; Collaborate Filtering; Elasticsearch; Logstash; Kibana; Redis; Electron, etc.}
         \resumeItemListEnd
-
-      \resumeSubheading
-        {Academic Tutor}{Chengdu, China}
-        {SWUN Lecture ``Human-Computer Interaction''}{Jul. 2015}
+      % \resumeSubheading
+      %   {Academic Tutor}{Chengdu, China}
+      %   {SWUN Lecture ``Human-Computer Interaction''}{Jul. 2015}
     }{
       \resumeSubheading
       {\href{https://shiyanlou.com/}{实验楼}}{成都, 中国}
@@ -190,12 +140,9 @@
         \resumeItem{技术写作}
           {负责编写了多项关于 C++ 的教学材料}
       \resumeItemListEnd
-
-      \resumeSubheading
-        {学生助教}{成都, 中国}
-        {``人机交互''讲座的学生助教工作}{Jul. 2015}
+      % \resumeSubheading
+      %   {学生助教}{成都, 中国}
+      %   {``人机交互''讲座的学生助教工作}{Jul. 2015}
     }
-
   }{}
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd

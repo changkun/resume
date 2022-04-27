@@ -3,22 +3,17 @@
 \begin{document}
 
 \input{../components/header}
-
-\ifthenelse{\boolean{cv}}{
-\input{../components/about}
-}{}
-
 \input{../components/education}
 \input{../components/work}
-\input{../components/skills}
+\ifthenelse{\boolean{cv}}{
+\input{../components/teaching}
+}{}
 \input{../components/projects}
-
+\input{../components/skills}
+\ifthenelse{\boolean{cv}}{
 \input{../components/publications}
 \input{../components/talks}
 \input{../components/awards}
-
-\ifthenelse{\boolean{cv}}{
-\input{../components/activities}
-\input{../components/personal}
 }{}
+% \input{../components/activities}
 \end{document}
