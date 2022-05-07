@@ -4,15 +4,18 @@
 }{
   \section{\textbf{教育经历}}
 }
-
-
-  \resumeSubHeadingListStartNoLabel
-  \small
-
+\resumeSubHeadingListStartNoLabel
+\small
 \ifthenelse{\boolean{en}} {
   \resumeSubheading
+    {Ph.D. Student Media Informatics (Dr. rer. nat.)}{Feb. 2019 -- (exp.) Feb. 2023}
     {LMU Munich}{Munich, Germany}
-    {Ph.D. Media Informatics.}{Feb. 2019 -- (exp.) Feb. 2023}
+    \resumeItemListStart
+      \resumeItem{Advisors}{
+        \emph{Prof. Dr. \href{https://butz.org}{Andreas Butz} (Erstberichterstatter), Prof. Dr. \href{https://www.kiml.ifi.lmu.de/people/professors/huellermeier/index.html}{Eyke Hüllermeier} (Zweitberichterstatter)
+        }
+      }
+    \resumeItemListEnd
 }{
   \resumeSubheading
     {慕尼黑大学}{慕尼黑, 德国}
@@ -22,34 +25,16 @@
 
 \ifthenelse{\boolean{en}} {
   \resumeSubheading
-    {LMU Munich}{Munich, Germany}
-    {M.Sc. Human-Computer Interaction; overall grade: 1.63 (max. 1.0) between ``Very Good'' and ``Good''
-    % \newline
-    % \emph{
-    %   I decided to do my master degree in HCI because I believe building great products
-    %   requires not only technical details but also a higher-level understanding of humanity.
-    %   The degree extends my understanding of how to modeling user behavior and
-    %   how to design proper user studies for investigating product issues.
-    %   Beyond doing compulsory HCI courses,
-    %   I also participated most of my course in machine learning and high-performance parallel
-    %   and distributed computing related fields,
-    %   and therefore I was part-time hired as a student tutor in machine learning
-    %   and deep learning lectures because of my excellent grades.
-    % }
-  }{Oct. 2016 -- Jan. 2019}
-  % \resumeItemListStart
-  %   \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/transcript-master-hci.pdf}{Link}}
-  %   \resumeItem{Thesis}{
-  %     \emph{Understanding and Predicting Web Browsing Behavior}.
-  %     % The thesis proposed a sequence to sequence machine learning model that studied
-  %     % the modeling ability of web browsing behavior.
-  %     % The proposed model involves not only server-side recorded requests,
-  %     % but also integrates client-side browser multi-tab branching, backtrack viewing,
-  %     % and stay the duration of users.
-  %     % Experiments and analysis result shows the model suggests client-side modeling of
-  %     % browsing data is better for classification and prediction of user’s web browsing behaviors.
-  %   }
-  % \resumeItemListEnd
+    {Master Student Human-Computer Interaction (M.Sc.)}{Oct. 2016 -- Jan. 2019}
+    {LMU Munich; overall grade: 1.63 (max. 1.0) between ``Very Good'' and ``Good''}{Munich, Germany}
+    \resumeItemListStart
+      \resumeItem{Thesis}{
+        \emph{``Understanding and Predicting Web Browsing Behavior''}
+      }
+      \resumeItem{Advisors}{
+        \emph{Dr. \href{https://daniel-buschek.de/}{Daniel Buschek}, Dr. \href{https://www.medien.ifi.lmu.de/team/malin.eiband/}{Malin Eiband}, Prof. Dr. \href{http://www.medien.ifi.lmu.de/team/heinrich.hussmann/}{Heinrich Hußmann}}
+      }
+    \resumeItemListEnd
 }{
   \resumeSubheading
   {慕尼黑大学}{慕尼黑, 德国}
@@ -78,8 +63,8 @@
 \ifthenelse{\boolean{cv}}{
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
+    {Master Student Software Engineering}{Aug. 2016 -- Sep. 2016}
     {University of Electronic Science and Technology of China}{Chengdu, China}
-    {M.Eng. Software Engineering}{Aug. 2016 -- Sep. 2016}
     % \resumeSubheading
     %   {University of Munich}{Munich, Germany}
     %   {Exchange Student}{Sep. 2015 -- Feb. 2016}
@@ -92,43 +77,26 @@
 
 \ifthenelse{\boolean{en}} {
     \resumeSubheading
-      {Southwest University for Nationalities}{Chengdu, China}
-      {B.Eng. Computer Science; overall grade: 3.74 (max. 4.0), ``Top 1 Student''
-      % \newline
-      % \emph{
-      %   During my bachelor studies,
-      %   I spent my time exploring many different computer science areas.
-      %   For instance, I wrote a tiny compiler when I was studying compilation theory.
-      %   Mathematics is one of my side interests, and therefore,
-      %   I received an excellent grade in all mathematics courses.}
-      }{Sep. 2012 -- Jul. 2016}
-      % \resumeItemListStart
-      %   \resumeItem{Transcript}{\href{https://github.com/changkun/resume/blob/master/assets/bachelor-transcript.pdf}{Link}}
-      %   \resumeItem{Thesis}{
-      %     \emph{Designing Alternative Contact-free Control Modalities for Smart Watches}.
-      %     % The thesis explores all existing interaction techniques on smartwatch products
-      %     % and then introduced a contact-free interaction design for Apple Watch as a case study.
-      %     % The experiment of the thesis shows that the proposed contact-free interaction gains
-      %     % higher acceptance and comfortability than existing interactions.
-      %   }
-      % \resumeItemListEnd
-
-
+      {Bachelor Student Computer Science and Engineering (B.Eng.)}{Sep. 2012 -- Jul. 2016}
+      {Southwest University for Nationalities; overall grade: 3.74 (max. 4.0), ``Top 1'' of 154 students
+      }{Chengdu, China}
+      \resumeItemListStart
+      \resumeItem{Thesis}{
+        \emph{``Designing Alternative Contact-free Control Modalities for Smart Watches''}
+      }
+      \resumeItem{Advisor}{
+        \emph{Prof. Dr. \href{https://jkxy.swun.edu.cn/info/1076/2482.htm}{Yaxi Chen}}
+      }
+    \resumeItemListEnd
     \resumeSubheading
-      {University Entrance Exam}{Huaihua, China}
-      {Overall grade: 512 (max. 750)
-      }{Sep. 2000 -- Jul. 2012}
+      {University Entrance Exam}{Sep. 2000 -- Jul. 2012}
+      {Overall grade: 512 (max. 750, first/second/third tiers: 520/451/357).
+      }{Huaihua, China}
 }{
   \resumeSubheading
     {西南民族大学}{成都, 中国}
     {计算机科学工程学士; 绩点: 3.74/4.00, 专业排名第一.
     }{2012.09 -- 2016.07}
-    % \resumeItemListStart
-    %   \resumeItem{相关材料}{
-    %     \href{https://github.com/changkun/resume/blob/master/assets/bachelor-transcript.pdf}{成绩单}
-    %     \textbf{毕业论文}: \href{https://changkun.de/s/bachelorthesis}{智能手表的非接触式备择交互模式的设计}.
-    %   }
-    % \resumeItemListEnd
 }
 
 

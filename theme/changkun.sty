@@ -4,6 +4,7 @@
 \usepackage{libertinust1math}
 \usepackage{fontspec}
 \usepackage{fontawesome5}
+\usepackage{makecell}
 
 % conditional compile
 \usepackage{ifthen}
@@ -62,29 +63,39 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\subsection}{
+  \scshape\raggedright\small\bf
+}{}{0em}{}[\color{black}\vspace{-6pt}]
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+  \item\footnotesize{
+    \textbf{#1}: #2 \vspace{-2pt}
+  }
+}
+\newcommand{\listItem}[1]{
+  \item\footnotesize{
+    #1\vspace{-2pt}
   }
 }
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
   \begin{tabularx}{0.97\textwidth}{X@{\extracolsep{\fill}}@{\hskip 0.2in}r}
-    \textbf{#1} & #2 \\
-    \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+    \textbf{#1} & \textbf{#2}\\[-2pt]
+    \textit{\footnotesize#3} & \textit{\footnotesize #4} \\[2pt]
   \end{tabularx}\vspace{-5pt}
 }
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \renewcommand{\labelitemii}{$\circ$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\resumeSubHeadingListStartNoLabel}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\small}
+\newcommand{\resumeSubHeadingListEnd}{\vspace{-5pt}\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\vspace{-2pt}\setlength\itemsep{0em}}
+\newcommand{\resumeItemListEnd}{\vspace{-5pt}\end{itemize}}
+\newcommand{\resumeSubHeadingListStartNoLabel}{\begin{itemize}[leftmargin=*,label={}]\small}
 
 \input{./condition}
 \ifthenelse{\boolean{en}} {
   \CTEXoptions[today=old]
 }{
 }
+
+% \linespread{1.2}
