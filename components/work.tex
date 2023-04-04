@@ -1,19 +1,25 @@
 \ifthenelse{\boolean{en}} {
-\section{\textbf{Professional Experience}}
+  \ifthenelse{\boolean{cv}}{
+  \section{\textbf{Professional Experience}}
+  }{
+  \section{\textbf{Recent Professional Experience}}
+  }
 }{
 \section{\textbf{工作经历}}
 }
 \resumeSubHeadingListStartNoLabel
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
-    {Software Development Engineer II}{Sep. 2022 -- Present}
+    {Software Development Engineer III (Senior)}{Sep. 2022 -- Present}
     {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
     \resumeItemListStart
-    \resumeItem{As engineer}{design and developing automated pricing system to support price decisions}
+    \resumeItem{As engineer}{design and developing automated pricing system to support price decisions; making existing systems approx. 300x faster}
+    \resumeItem{Involved techniques}{
+      Go; C++; Python; Kubernetes; Jenkins; Promethues; Postgres; Redis; AWS; etc.}
     \resumeItemListEnd
   }{
     \resumeSubheading
-    {软件工程师}{2022.09 -- 至今}
+    {高级软件工程师}{2022.09 -- 至今}
     {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
     \resumeItemListStart
     \resumeItem{研发相关}{设计并研发自动定价系统}
@@ -21,7 +27,7 @@
   }
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
-    {Research Associate}{Aprl. 2018 -- Present}
+    {Research Associate}{Aprl. 2018 -- Mar. 2023}
     {\href{https://lmu.de/}{LMU Munich}}{Munich, Germany}
     \resumeItemListStart
     \resumeItem{As researcher}{research on human-in-the-loop machine learning 3D graphics systems}
@@ -31,7 +37,7 @@
     \resumeItemListEnd
   }{
     \resumeSubheading
-    {研究员}{2018.04 -- 至今}
+    {研究员}{2018.04 -- 2023.03}
     {\href{https://lmu.de/}{慕尼黑大学}}{慕尼黑，德国}
     \resumeItemListStart
     \resumeItem{研究相关}{研究人机闭环机器学习 3D 图形系统}
@@ -78,28 +84,28 @@
       Docker, Kubernetes, AWS, AlibabaCloud, etc}
     \resumeItemListEnd
   }
-  \ifthenelse{\boolean{en}} {
-    \resumeSubheading
-    {Fullstack Engineer (Freelance)}{Nov. 2017 -- Mar. 2018}
-    {\href{https://magiclingua.com/}{Rocketlingo UG}}{Munich, Germany}
-    \resumeItemListStart
-    \resumeItem{As developer}{developed a voice bot to support novice language learner to improve their language skills by real-time voice recognition and synthesis (supports web and Amazon Alexa), optimize for audio streaming and multilingual falt tolerances using machine learning
-    }
-    \resumeItem{Involved techniques}{
-      TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; etc}
-    \resumeItemListEnd
-  }{
-    \resumeSubheading
-    {全栈工程师（兼职）}{2017.11 -- 2018.05}
-    {\href{https://magiclingua.com/}{Rocketlingo UG}}{慕尼黑，德国}
-    \resumeItemListStart
-    \resumeItem{作为研发人员}{开发了一个语音助手，用过实时语音识别与合成来帮助用户提高语言技能（支持 Web 端和 Alexa 端），并优化了音频流传输以及多语言识别的容错。
-    }
-    \resumeItem{技术栈}{
-      TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; 等}
-    \resumeItemListEnd
-  }
   \ifthenelse{\boolean{cv}}{
+    \ifthenelse{\boolean{en}} {
+      \resumeSubheading
+      {Fullstack Engineer (Freelance)}{Nov. 2017 -- Mar. 2018}
+      {\href{https://magiclingua.com/}{Rocketlingo UG}}{Munich, Germany}
+      \resumeItemListStart
+      \resumeItem{As developer}{developed a voice bot to support novice language learner to improve their language skills by real-time voice recognition and synthesis (supports web and Amazon Alexa), optimize for audio streaming and multilingual falt tolerances using machine learning
+      }
+      \resumeItem{Involved techniques}{
+        TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; etc}
+      \resumeItemListEnd
+    }{
+      \resumeSubheading
+      {全栈工程师（兼职）}{2017.11 -- 2018.05}
+      {\href{https://magiclingua.com/}{Rocketlingo UG}}{慕尼黑，德国}
+      \resumeItemListStart
+      \resumeItem{作为研发人员}{开发了一个语音助手，用过实时语音识别与合成来帮助用户提高语言技能（支持 Web 端和 Alexa 端），并优化了音频流传输以及多语言识别的容错。
+      }
+      \resumeItem{技术栈}{
+        TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; 等}
+      \resumeItemListEnd
+    }
     \ifthenelse{\boolean{en}} {
       \resumeSubheading
       {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
