@@ -1,3 +1,7 @@
+% For industry resume: omit activities entirely
+% For academia resume: keep activities
+% For CV: keep all activities
+\ifthenelse{\boolean{cv}}{
 \ifthenelse{\boolean{en}}{
     \section{\textbf{Volunteering}}
 }{
@@ -14,6 +18,35 @@
 \resumeSubheading
 {Reviewing}{}
 {CHI '20 - CHI'23, MobileHCI' 2023, ICMI' 2022, IMWUT' 2022, INTERACT' 2021}{}
+}{
+% Resume mode
+\ifthenelse{\boolean{industry}}{
+% Industry resume: condensed academic service
+\ifthenelse{\boolean{en}}{
+    \section{\textbf{Academic Service}}
+}{
+    \section{\textbf{学术服务}}
+}
+\resumeSubHeadingListStartNoLabel
+\resumeSubheading
+{Associate Chair (Computational Interaction)}{CHI '24, CHI '25, CHI '26}
+{ACM CHI Conference on Human Factors in Computing Systems}{}
+\resumeSubheading
+{Associate Chair (Human-Centred Intelligent Interactive Systems)}{INTERACT '25}
+{IFIP TC13 International Conference on Human-Computer Interaction}{}
+}{
+% Academia resume: condensed version
+\ifthenelse{\boolean{en}}{
+    \section{\textbf{Academic Service}}
+}{
+    \section{\textbf{学术服务}}
+}
+\resumeSubHeadingListStartNoLabel
+\resumeSubheading
+{Associate Chair}{CHI '24-'26, INTERACT '25}
+{ACM CHI, IFIP INTERACT}{}
+}
+}
 % \resumeSubheading
 % {Reviewing}{}
 % \resumeSubheading
@@ -36,4 +69,12 @@
 % {Mathematical Modeling Association Academic Vice Director}{Oct. 2012 -- Jun. 2014}
 % {Southwest University and Nationalities}{Chengdu, China}
 
+\ifthenelse{\boolean{cv}}{
 \resumeSubHeadingListEnd
+}{
+\ifthenelse{\boolean{industry}}{
+\resumeSubHeadingListEnd
+}{
+\resumeSubHeadingListEnd
+}
+}

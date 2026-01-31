@@ -14,11 +14,17 @@
       \resumeItem{Thesis}{
         \emph{``\href{https://changkun.de/research/theses/phd.pdf}{The Intelligence in the Loop: Empirical Explorations and Reflections}'', Magna cum Laude}
       }
-      \resumeItem{Thesis Committee}{
-        \emph{
-          Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz} (Erstberichterstatter),
-          Prof. Dr. \href{https://www.kiml.ifi.lmu.de/people/professors/huellermeier/index.html}{Eyke Hüllermeier} (Zweitberichterstatter),
-          Prof. Dr.-Ing. \href{https://www.lgdv.tf.fau.de/person/marc-stamminger/}{Marc Stamminger} (Drittberichterstatter).
+      \ifthenelse{\boolean{industry}}{
+        \resumeItem{Advisor}{
+          \emph{Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz}}
+        }
+      }{
+        \resumeItem{Thesis Committee}{
+          \emph{
+            Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz} (Erstberichterstatter),
+            Prof. Dr. \href{https://www.kiml.ifi.lmu.de/people/professors/huellermeier/index.html}{Eyke Hüllermeier} (Zweitberichterstatter),
+            Prof. Dr.-Ing. \href{https://www.lgdv.tf.fau.de/person/marc-stamminger/}{Marc Stamminger} (Drittberichterstatter).
+          }
         }
       }
     \resumeItemListEnd
@@ -27,10 +33,16 @@
     {媒体信息~理学博士 (Dr. rer. nat.)}{2019.02 -- 2023.04}
     {慕尼黑大学}{慕尼黑, 德国}
     \resumeItemListStart
-      \resumeItem{导师}{
-        \emph{Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz} (第一导师),
-        Prof. Dr. \href{https://www.kiml.ifi.lmu.de/people/professors/huellermeier/index.html}{Eyke Hüllermeier} (第二导师)，
-        Prof. Dr.-Ing. \href{https://www.lgdv.tf.fau.de/person/marc-stamminger/}{Marc Stamminger} (第三导师).
+      \ifthenelse{\boolean{industry}}{
+        \resumeItem{导师}{
+          \emph{Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz}}
+        }
+      }{
+        \resumeItem{导师}{
+          \emph{Prof. Dr.-Ing. \href{https://butz.org}{Andreas Butz} (第一导师),
+          Prof. Dr. \href{https://www.kiml.ifi.lmu.de/people/professors/huellermeier/index.html}{Eyke Hüllermeier} (第二导师)，
+          Prof. Dr.-Ing. \href{https://www.lgdv.tf.fau.de/person/marc-stamminger/}{Marc Stamminger} (第三导师).
+          }
         }
       }
     \resumeItemListEnd
@@ -62,17 +74,6 @@
     \resumeItemListEnd
 }
 
-\ifthenelse{\boolean{cv}}{
-  \ifthenelse{\boolean{en}} {
-    \resumeSubheading
-    {Master Student Software Engineering}{Aug. 2016 -- Sep. 2016}
-    {University of Electronic Science and Technology of China}{Chengdu, China}
-  }{
-    \resumeSubheading
-    {软件工程~工程硕士学生}{2016.08 -- 2016.09}
-    {电子科技大学}{成都, 中国}
-  }
-}{}
 
 \ifthenelse{\boolean{en}} {
     \resumeSubheading
@@ -102,18 +103,5 @@
   \resumeItemListEnd
 }
 
-\ifthenelse{\boolean{cv}}{
-  \ifthenelse{\boolean{en}} {
-    \resumeSubheading
-    {University Entrance Exam}{Sep. 2000 -- Jul. 2012}
-    {Overall grade: 512 (max. 750, first/second/third tiers: 520/451/357).
-    }{Huaihua, China}
-  }{
-    \resumeSubheading
-    {高考}{2000.09-2012.07}
-    {总成绩：512（最高 750，第一/二/三本分数线：520/451/357）
-    }{怀化，中国}
-  }
-}{}
 
 \resumeSubHeadingListEnd

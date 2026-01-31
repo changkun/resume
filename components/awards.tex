@@ -1,4 +1,3 @@
-
 \ifthenelse{\boolean{en}} {
 \section{\textbf{Scholarships and Awards}}
 }{
@@ -15,15 +14,18 @@
     \resumeSubheading
         {ACM SIGCHI Mensch und Computer}{Sep. 2022}
         {Honorable Mention Award}{}
+    \ifthenelse{\boolean{cv}}{
     \resumeSubheading
         {ACM SIGCHI Special Recognitions (CHI '20)}{Nov. 2019}
         {Outstanding Reviews}{}
     \resumeSubheading
         {Siemens AILab Hackathon}{Nov. 2017}
         {2nd Winner}{Munich, Germany}
+    }{}
     \resumeSubheading
         {China National Scholarship}{Sep. 2016}
         {University of Electronic Science and Technology of China}{Chengdu, China}
+    \ifthenelse{\boolean{cv}}{
     \resumeSubheading
         {Excellent Bachelor Thesis Award}{Jun. 2016}
         {Southwest University for Nationalities}{Chengdu, China}
@@ -41,22 +43,26 @@
         {Sichuan Province Computer Production Competition}{May 2015}
         {2nd Award}{Chengdu, China}
     }{}
+    }{}
     \resumeSubheading
         {China National Scholarship}{Sep. 2014}
         {Southwest University for Nationalities}{Chengdu, China}
     \resumeSubheading
-        {Meritorious Winner in American Mathematical Contest in Modeling (MCM' 14)}{Apr. 2014}
-        {Southwest University for Nationalities}{Chengdu, China}
+        {Meritorious Winner in Mathematical Contest in Modeling (MCM)}{Apr. 2014}
+        {Top 9\% internationally}{}
 }{
+    \ifthenelse{\boolean{cv}}{
     \resumeSubheading
         {ACM SIGCHI 特殊表彰 (CHI 20)}{2019.11}
         {优秀审稿}{慕尼黑，德国}
     \resumeSubheading
         {西门子 AI 实验室黑客马拉松}{2017.11}
         {二等奖}{慕尼黑, 德国}
+    }{}
     \resumeSubheading
         {国家奖学金}{2016.09}
         {电子科技大学}{成都, 中国}
+    \ifthenelse{\boolean{cv}}{
     \resumeSubheading
         {本科优秀毕业论文}{2016.06}
         {西南民族大学}{成都, 中国}
@@ -74,11 +80,14 @@
         {计算机作品赛}{2015.05}
         {四川省二等奖}{成都, 中国}
     }{}
+    }{}
     \resumeSubheading
         {国家奖学金}{2014.09}
         {西南民族大学}{成都, 中国}
+    \ifthenelse{\boolean{cv}}{
     \resumeSubheading
         {美国数学建模竞赛}{2014.04}
         {一等奖（Meritorious Winner）}{成都, 中国}
+    }{}
 }
 \resumeSubHeadingListEnd
