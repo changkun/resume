@@ -6,12 +6,12 @@
 \input{../components/about}
 \input{../components/education}
 \input{../components/work}
-\input{../components/projects}
+\input{../components/publications}
 \input{../components/skills}
 \input{../components/awards}
-\ifthenelse{\boolean{cv}}{
-\input{../components/publications}
-\input{../components/teaching}
 \input{../components/activities}
+\ifthenelse{\boolean{cv}}{
+\input{../components/projects}
+\input{../components/teaching}
 }{}
 \end{document}
