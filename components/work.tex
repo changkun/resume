@@ -8,70 +8,97 @@
 \section{\textbf{工作经历}}
 }
 \resumeSubHeadingListStartNoLabel
-  \ifthenelse{\boolean{en}} {
-    \resumeSubheading
-    {Staff Engineer}{Oct. 2025 -- Present}
-    {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
-    \resumeItemListStart
-    \resumeItem{As AI transformation lead}{Leading organization-wide AI transformation across revenue management, customer service, B2B sales, and SRE platform domains.}
-    \resumeItem{As AI Platform Lead}{Architected enterprise AI platform: SixtGPT (AI chat, self-service agent builder, company-wide agent harness framework with eval pipeline), LLM Gateway (centralized model access), Knowledge Vault (knowledge understanding, extraction, personalized and agent memory; indexing Confluence, contracts, guidelines, ServiceNow, and conversation memory), workflow orchestration (n8n), vibe coding platform (enabling non-tech users to code), and document processing (Tensorlake integration with governance).}
-    \resumeItem{As engineer}{Led 637+ PRs across 50+ repositories in 2025; built competition-based pricing, VAT compliance infrastructure, AI security and governance, and deployed code review automation across 25+ repositories.}
-    \resumeItem{As contributor}{Published production-quality Go SDKs (Tensorlake); contributed upstream to major open source projects (LibreChat, mcp-go).}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {Senior Software Engineer}{Aug. 2023 -- Sep. 2025}
-    {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
-    \resumeItemListStart
-    \resumeItem{As researcher}{Led AI transformation initiatives by managing executive and C-level stakeholders, integrating LLM-based solutions into core business operations.}
-    \resumeItem{As engineer}{Designed and delivered human-in-the-loop revenue optimization systems, driving an estimated 2.5\% margin uplift and enabling strategic organizational shifts.}
-    \resumeItem{As mentor}{Mentored engineers through technically challenging projects and actively contributed to building and scaling high-performing engineering teams.}
-    \resumeItemListEnd
-  }{
-    \resumeSubheading
-    {首席工程师}{2025.10 -- 至今}
-    {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
-    \resumeItemListStart
-    \resumeItem{AI转型负责人}{领导组织级AI转型，覆盖收益管理、客户服务、B2B销售及SRE平台等业务领域。}
-    \resumeItem{AI平台负责人}{设计构建企业级AI平台：SixtGPT（AI对话、自助式智能体构建器、公司级智能体框架及评估流水线）、LLM Gateway（统一模型访问）、Knowledge Vault（知识理解、抽取、个性化与智能体记忆；索引Confluence、合同、规范、ServiceNow及对话记忆）、工作流编排（n8n）、Vibe编程平台（使非技术用户能够编程）、文档处理（Tensorlake集成与治理）。}
-    \resumeItem{研发相关}{2025年主导637+ PRs，涉及50+代码仓库；构建竞争定价系统、增值税合规基础设施、AI安全与治理，并在25+仓库部署代码审查自动化。}
-    \resumeItem{开源贡献}{发布生产级Go SDK（Tensorlake）；向主流开源项目（LibreChat、mcp-go）贡献代码。}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {高级软件工程师}{2023.08 -- 2025.09}
-    {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
-    \resumeItemListStart
-    \resumeItem{研究相关}{领导大模型（LLM）驱动的AI转型项目，管理高管及C-level利益相关方，将AI能力深入融入核心业务流程。}
-    \resumeItem{研发相关}{设计并实现了"人机协同"的收益优化系统，带来约2.5\%的利润率提升，推动组织结构变革与业务模式升级。}
-    \resumeItem{指导相关}{指导工程师攻克复杂技术挑战，并积极参与技术团队的建设与人才培养。}
-    \resumeItemListEnd
+  % Resume: Merged SIXT entry
+  \ifthenelse{\boolean{cv}}{}{
+    \ifthenelse{\boolean{en}} {
+      \resumeSubheading
+      {Staff Engineer (promoted from Software Engineer)}{Sep. 2022 -- Present}
+      {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
+      \resumeItemListStart
+      \resumeItem{As AI transformation lead}{Leading organization-wide AI transformation across revenue management, customer service, B2B sales, and SRE platform domains.}
+      \resumeItem{As AI platform lead}{Architected enterprise AI platform: AI chat interface, self-service agent builder, company-wide agent framework with eval pipeline, centralized LLM gateway, knowledge management system, workflow orchestration, low-code platform, and document processing pipeline.}
+      \resumeItem{As engineer}{Led 637+ PRs across 50+ repositories in 2025; built competition-based pricing, compliance infrastructure, AI security and governance; designed revenue optimization systems driving 2.5\% margin uplift; made yield systems 300x faster enabling 10x business scale.}
+      \resumeItem{As mentor}{Mentored engineers through technically challenging projects and actively contributed to building and scaling high-performing engineering teams.}
+      \resumeItemListEnd
+    }{
+      \resumeSubheading
+      {首席工程师（由软件工程师晋升）}{2022.09 -- 至今}
+      {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
+      \resumeItemListStart
+      \resumeItem{AI转型负责人}{领导组织级AI转型，覆盖收益管理、客户服务、B2B销售及SRE平台等业务领域。}
+      \resumeItem{AI平台负责人}{设计构建企业级AI平台：AI对话界面、自助式智能体构建器、公司级智能体框架及评估流水线、统一LLM网关、知识管理系统、工作流编排、低代码平台、文档处理流水线。}
+      \resumeItem{研发相关}{2025年主导637+ PRs，涉及50+代码仓库；构建竞争定价系统、合规基础设施、AI安全与治理；设计收益优化系统带来2.5\%利润率提升；使定价系统性能提升300倍，支撑业务10倍增长。}
+      \resumeItem{指导相关}{指导工程师攻克复杂技术挑战，并积极参与技术团队的建设与人才培养。}
+      \resumeItemListEnd
+    }
   }
+  % CV: Detailed separate entries for each stage
+  \ifthenelse{\boolean{cv}}{
+    \ifthenelse{\boolean{en}} {
+      \resumeSubheading
+      {Staff Engineer}{Oct. 2025 -- Present}
+      {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
+      \resumeItemListStart
+      \resumeItem{As AI transformation lead}{Leading organization-wide AI transformation across revenue management, customer service, B2B sales, and SRE platform domains.}
+      \resumeItem{As AI platform lead}{Architected enterprise AI platform: AI chat interface, self-service agent builder, company-wide agent framework with eval pipeline, centralized LLM gateway, knowledge management system (indexing documentation, contracts, guidelines, tickets, and conversation memory), workflow orchestration, low-code platform (enabling non-tech users to build applications), and document processing pipeline with governance.}
+      \resumeItem{As engineer}{Led 637+ PRs across 50+ repositories in 2025; built competition-based pricing, compliance infrastructure, AI security and governance, and deployed code review automation across 25+ repositories.}
+      \resumeItem{As contributor}{Published production-quality Go SDKs; contributed upstream to major open source projects (LibreChat, mcp-go).}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Senior Software Engineer}{Aug. 2023 -- Sep. 2025}
+      {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
+      \resumeItemListStart
+      \resumeItem{As researcher}{Led AI transformation initiatives by managing executive and C-level stakeholders, integrating LLM-based solutions into core business operations.}
+      \resumeItem{As engineer}{Designed and delivered human-in-the-loop revenue optimization systems, driving an estimated 2.5\% margin uplift and enabling strategic organizational shifts.}
+      \resumeItem{As mentor}{Mentored engineers through technically challenging projects and actively contributed to building and scaling high-performing engineering teams.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Software Engineer}{Sep. 2022 -- Jul. 2023}
+      {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
+      \resumeItemListStart
+      \resumeItem{As engineer}{Led the design and build of modern automated pricing revenue management, making yield systems approximately 300x faster and enabling the business to scale 10x}
+      \resumeItem{Involved techniques}{Go; C++; Python; Kubernetes; Jenkins; Prometheus; Postgres; Redis; AWS; etc.}
+      \resumeItemListEnd
+    }{
+      \resumeSubheading
+      {首席工程师}{2025.10 -- 至今}
+      {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
+      \resumeItemListStart
+      \resumeItem{AI转型负责人}{领导组织级AI转型，覆盖收益管理、客户服务、B2B销售及SRE平台等业务领域。}
+      \resumeItem{AI平台负责人}{设计构建企业级AI平台：AI对话界面、自助式智能体构建器、公司级智能体框架及评估流水线、统一LLM网关、知识管理系统（索引文档、合同、规范、工单及对话记忆）、工作流编排、低代码平台（使非技术用户能够构建应用）、文档处理流水线及治理。}
+      \resumeItem{研发相关}{2025年主导637+ PRs，涉及50+代码仓库；构建竞争定价系统、合规基础设施、AI安全与治理，并在25+仓库部署代码审查自动化。}
+      \resumeItem{开源贡献}{发布生产级Go SDK；向主流开源项目（LibreChat、mcp-go）贡献代码。}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {高级软件工程师}{2023.08 -- 2025.09}
+      {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
+      \resumeItemListStart
+      \resumeItem{研究相关}{领导大模型（LLM）驱动的AI转型项目，管理高管及C-level利益相关方，将AI能力深入融入核心业务流程。}
+      \resumeItem{研发相关}{设计并实现了"人机协同"的收益优化系统，带来约2.5\%的利润率提升，推动组织结构变革与业务模式升级。}
+      \resumeItem{指导相关}{指导工程师攻克复杂技术挑战，并积极参与技术团队的建设与人才培养。}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {软件工程师}{2022.09 -- 2023.07}
+      {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
+      \resumeItemListStart
+      \resumeItem{研发相关}{设计并研发自动定价系统，使定价系统性能提升约300倍，支撑业务10倍增长}
+      \resumeItem{技术栈}{Go; C++; Python; Kubernetes; Jenkins; Prometheus; Postgres; Redis; AWS; 等}
+      \resumeItemListEnd
+    }
+  }{}
   \ifthenelse{\boolean{en}} {
     \resumeSubheading
-    {Software Engineer}{Sep. 2022 -- Jul. 2023}
-    {\href{https://sixt.com/}{Sixt SE}}{Munich Pullach, Germany}
-    \resumeItemListStart
-    \resumeItem{As engineer}{Led the design and build of modern automated pricing revenue management, making yield systems approx. 300x faster; enabling to scale business 10x more}
-    \resumeItem{Involved techniques}{Go; C++; Python; Kubernetes; Jenkins; Prometheus; Postgres; Redis; AWS; etc.}
-    \resumeItemListEnd
-  }{
-    \resumeSubheading
-    {软件工程师}{2022.09 -- 2023.07}
-    {\href{https://sixt.com/}{Sixt SE}}{慕尼黑，德国}
-    \resumeItemListStart
-    \resumeItem{研发相关}{设计并研发自动定价系统}
-    \resumeItemListEnd
-  }
-  \ifthenelse{\boolean{en}} {
-    \resumeSubheading
-    {Research Associate, Lecturer}{Aprl. 2018 -- Mar. 2023, Aprl. 2024 -- Present}
+    {Research Associate, Lecturer}{Apr. 2018 -- Mar. 2023, Apr. 2024 -- Present}
     {\href{https://lmu.de/}{LMU Munich}}{Munich, Germany}
     \resumeItemListStart
-    \resumeItem{As lecturer}{supervising 18 students in conducting scientific research}
-    \resumeItem{As researcher}{research on human-in-the-loop machine learning 3D graphics systems}
-    \resumeItem{As teacher}{teach 12 classes (as lecturer/instructor/assistant/tutor), and supervising 20+ student theses and seminars}
-    \resumeItem{As developer}{develop a 3D mesh processing backend system in collaboration with industry partner \href{https://www.way-ds.de/}{WAY digital solutions}; develop, migrate, and maintain a 17 year-old \href{https://www.medien.ifi.lmu.de/}{university} \href{https://github.com/changkun/destrictor}{CMS system}, and a 13 year-old \href{https://barkeeper.medien.ifi.lmu.de/}{collaborative system}
+    \resumeItem{As lecturer}{Supervised 18 students in conducting scientific research}
+    \resumeItem{As researcher}{Researched human-in-the-loop machine learning for 3D graphics systems}
+    \resumeItem{As teacher}{Taught 12 classes (as lecturer/instructor/assistant/tutor) and supervised 20+ student theses and seminars}
+    \resumeItem{As developer}{Developed a 3D mesh processing backend system in collaboration with industry partner \href{https://www.way-ds.de/}{WAY digital solutions}; developed, migrated, and maintained a 17-year-old \href{https://www.medien.ifi.lmu.de/}{university} \href{https://github.com/changkun/destrictor}{CMS system} and a 13-year-old \href{https://barkeeper.medien.ifi.lmu.de/}{collaborative system}
     }
     \resumeItemListEnd
   }{
@@ -91,12 +118,12 @@
     {Backend Software Engineer (Remote)}{Apr. 2018 -- Jan. 2019}
     {\href{https://labex.io/}{LabEx Technology Ltd}}{Munich, Germany}
     \resumeItemListStart
-    \resumeItem{As team leader}{leading developments of an oversea product;
-      established microservice based backend architecture;
-      the product autoscales cloud instances (on AWS/AlibabaCloud) ranging from 20 to 200;
-      the product user group grows from 5k+ to 30k+ during my incumbency.
+    \resumeItem{As team leader}{Led development of an overseas product;
+      established microservice-based backend architecture;
+      the product autoscaled cloud instances (on AWS/AlibabaCloud) ranging from 20 to 200;
+      the user base grew from 5k+ to 30k+ during my tenure.
     }
-    \resumeItem{As developer}{1) developed a scalable remote desktop proxy (support WebSocket to VNC/RDP/SSH protocols) using Go; 2) developed an automated multi-cloud resource management microservice that abstracts cross cloud providers (supports AWS/AlibabaCloud over 15 cloud products, e.g., IAM/EC2/VPC/etc), scales and used by 10k+ users; 3) developed a kubernetes-like container and instance hybrid management service.
+    \resumeItem{As developer}{1) Developed a scalable remote desktop proxy (supporting WebSocket to VNC/RDP/SSH protocols) using Go; 2) developed an automated multi-cloud resource management microservice that abstracts cross-cloud providers (supporting AWS/AlibabaCloud across 15+ cloud products, e.g., IAM/EC2/VPC), scaled and used by 10k+ users; 3) developed a Kubernetes-like container and instance hybrid management service.
     }
     \resumeItem{Involved techniques}{
       Frontend: Vue, jQuery, Webpack, Electron;
@@ -129,7 +156,7 @@
       {Fullstack Engineer (Freelance)}{Nov. 2017 -- Mar. 2018}
       {\href{https://magiclingua.com/}{Rocketlingo UG}}{Munich, Germany}
       \resumeItemListStart
-      \resumeItem{As developer}{developed a voice bot to support novice language learner to improve their language skills by real-time voice recognition and synthesis (supports web and Amazon Alexa), optimize for audio streaming and multilingual falt tolerances using machine learning
+      \resumeItem{As developer}{Developed a voice bot to help novice language learners improve their skills through real-time voice recognition and synthesis (supporting web and Amazon Alexa); optimized audio streaming and multilingual fault tolerance using machine learning
       }
       \resumeItem{Involved techniques}{
         TypeScript; WebSocket; Angular; Google Cloud STT and TTS; Sklearn; Voice Recognition; etc}
@@ -150,10 +177,10 @@
       {Software Engineer (Intern)}{Jun. 2016 -- Sep. 2016}
       {\href{https://shiyanlou.com/}{Shiyanlou}}{Chengdu, China}
       \resumeItemListStart
-      \resumeItem{As developer}{developed a cross-platform desktop software using Electron; developed a recommendation system for E-learning recommendation;
-      deployed and operates a logging system for internal data analysis
+      \resumeItem{As developer}{Developed a cross-platform desktop application using Electron; developed a recommendation system for e-learning;
+      deployed and operated a logging system for internal data analysis
       }
-      \resumeItem{As content creator}{wrote more than 20+ professional educational materials regarding C++}
+      \resumeItem{As content creator}{Wrote 20+ professional educational materials on C++}
       \resumeItem{Involved techniques}{
         C++; Python; MongoDB; Collaborate Filtering; Elasticsearch; Logstash; Kibana; Redis; Electron, etc.}
       \resumeItemListEnd
