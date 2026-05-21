@@ -1,30 +1,41 @@
-\documentclass[letterpaper,11pt]{ctexart}
+\documentclass[letterpaper,11pt,fontset=fandol]{ctexart}
 \usepackage{../theme/changkun}
 \begin{document}
 
 \input{../components/header}
 \input{../components/about}
+
+\ifthenelse{\boolean{cv}}{
 \input{../components/education}
 \input{../components/work}
 \input{../components/publications}
 \input{../components/skills}
 \input{../components/awards}
 \input{../components/activities}
-\ifthenelse{\boolean{cv}}{
 \input{../components/projects}
 \input{../components/teaching}
 }{
-% Industry resume: condensed open source section
 \ifthenelse{\boolean{industry}}{
+% Industry resume: OpenAI-facing order and compact supporting sections
+\input{../components/work}
+\input{../components/skills}
+\ifthenelse{\boolean{en}} {
+\section{\textbf{Research}}
+\small
+Human-AI interaction research: 15+ peer-reviewed papers, 310+ citations, h-index 9; Best Paper at ACM VRST and Honorable Mention at ACM MuC. Full list: \href{https://changkun.de/research/}{changkun.de/research}.
+}{
+\section{\textbf{研究成果}}
+\small
+人机交互研究：15+ 篇同行评审论文，310+ 引用，h-index 9；获 ACM VRST 最佳论文奖及 ACM MuC 荣誉提名奖。完整列表见 \href{https://changkun.de/research/}{changkun.de/research}。
+}
+\input{../components/education}
 \ifthenelse{\boolean{en}} {
 \section{\textbf{Open Source}}
 \small
 Top-200 most active developer in Germany by public contributions. 20.8k+ GitHub stars, 14.9k+ commits across 20+ projects.
 \resumeSubHeadingListStart
-\resumeSubItem{\href{http://github.com/golang/go/}{Go Language} (organization member)}{One of 163 official members; current maintainer of x/mobile repository; active contributor to the language runtime and standard library.}
-\resumeSubItem{\href{https://github.com/fyne-io/fyne}{Fyne} (organization member)}{One of 12 core members of this cross-platform GUI framework (24k+ stars); contributing to graphics drivers and performance.}
-\resumeSubItem{\href{https://golang.design}{golang.design} (founder)}{Founded organization hosting 25+ software projects with 6 core members; 465k+ page views since 2020.}
-\resumeSubItem{\href{https://talkgo.org}{TalkGo Community} (core member)}{Tech talk community with 6.3k+ YouTube subscribers; contributed 7 talks among the most viewed.}
+\resumeSubItem{\href{http://github.com/golang/go/}{Go Language} and \href{https://github.com/fyne-io/fyne}{Fyne} (organization member)}{Go x/mobile maintainer and contributor to runtime/standard library; one of 12 Fyne core members contributing graphics drivers and performance.}
+\resumeSubItem{\href{https://golang.design}{golang.design} and \href{https://talkgo.org}{TalkGo} (founder/core member)}{Founded 25+ project organization with 465k+ page views; contributed high-traffic talks to 6.3k+ subscriber Go community.}
 \resumeSubItem{Notable contributions}{\href{https://github.com/LibreChat-AI/LibreChat}{LibreChat}, \href{https://github.com/mark3labs/mcp-go}{mcp-go}, \href{http://github.com/tensorflow/tensorflow/}{TensorFlow}, \href{https://github.com/etcd-io/etcd}{etcd}.}
 \resumeSubItem{Selected packages}{\href{https://golang.design/x/clipboard}{clipboard} (1k+ stars, 2.8k+ dependents), \href{https://golang.design/x/hotkey}{hotkey}, \href{https://golang.design/x/mainthread}{mainthread} - cross-platform Go libraries for GUI/system programming.}
 \resumeSubHeadingListEnd
@@ -33,16 +44,20 @@ Top-200 most active developer in Germany by public contributions. 20.8k+ GitHub 
 \small
 德国公开贡献排名前 200 的开发者。20.8k+ GitHub stars，14.9k+ 次提交，贡献 20+ 个项目。
 \resumeSubHeadingListStart
-\resumeSubItem{\href{http://github.com/golang/go/}{Go 语言}（组织成员）}{163 名官方成员之一；x/mobile 维护者；运行时和标准库贡献者。}
-\resumeSubItem{\href{https://github.com/fyne-io/fyne}{Fyne}（组织成员）}{跨平台 GUI 框架（24k+ stars）12 名核心成员之一；贡献图形驱动和性能优化。}
-\resumeSubItem{\href{https://golang.design}{golang.design}（创建者）}{创建组织，托管 25+ 项目，6 名核心成员；自 2020 年累计 465k+ 访问量。}
-\resumeSubItem{\href{https://talkgo.org}{Go 夜读}（核心成员）}{技术分享社区，6.3k+ YouTube 订阅者；贡献 7 场最受欢迎的演讲。}
+\resumeSubItem{\href{http://github.com/golang/go/}{Go 语言}与 \href{https://github.com/fyne-io/fyne}{Fyne}（组织成员）}{Go x/mobile 维护者，运行时与标准库贡献者；Fyne 12 名核心成员之一，贡献图形驱动和性能优化。}
+\resumeSubItem{\href{https://golang.design}{golang.design} 与 \href{https://talkgo.org}{Go 夜读}（创建者/核心成员）}{创建 25+ 项目组织，累计 465k+ 访问量；向 6.3k+ 订阅者 Go 社区贡献高流量技术分享。}
 \resumeSubItem{其他贡献}{\href{https://github.com/LibreChat-AI/LibreChat}{LibreChat}、\href{https://github.com/mark3labs/mcp-go}{mcp-go}、\href{http://github.com/tensorflow/tensorflow/}{TensorFlow}、\href{https://github.com/etcd-io/etcd}{etcd}。}
 \resumeSubItem{代表软件}{\href{https://golang.design/x/clipboard}{clipboard}（1k+ stars，2.8k+ 依赖）、\href{https://golang.design/x/hotkey}{hotkey}、\href{https://golang.design/x/mainthread}{mainthread} - 跨平台 Go GUI/系统编程库。}
 \resumeSubHeadingListEnd
 }
 }{
 % Academia resume: condensed teaching summary
+\input{../components/education}
+\input{../components/work}
+\input{../components/publications}
+\input{../components/skills}
+\input{../components/awards}
+\input{../components/activities}
 \ifthenelse{\boolean{en}} {
 \section{\textbf{Teaching}}
 \small
